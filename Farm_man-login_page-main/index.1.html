@@ -1,0 +1,75 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Farm </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="IOT Monitoring" class="your-active-class">
+      <div class="landing__container">
+        <h2>IOT Monitoring</h2>
+        <p> Smart art farming is the use of technology and data to improve agricultural production. It involves using sensors, robotics, drones, artificial intelligence (AI), and other Internet of Things (IoT) devices to monitor crops, livestock, soil conditions, weather patterns, and more.
+          By leveraging this data-driven approach to agriculture, farmers can increase yields while reducing costs and environmental impact.
+          </p>
+        <h3>•	IoT Sensors and Robotics</h3>
+        <p>Sensors are used in IoT-based smart farming to measure various aspects of a farm’s environment such as temperature, humidity levels, or soil moisture content. This information is then sent back to the farmer who can adjust their practices accordingly for optimal crop growth.
+          Additionally, robots are being developed that help with tasks such as weeding or harvesting which helps reduce labor costs associated with manual labor on farms.
+          </p>
+          <h3>•	Drones and AI</h3>
+          <p>Drones are becoming increasingly popular in agriculture IoT due to their ability to collect aerial images which can be used for precision mapping of fields or monitoring crop health from above.</p>
+          <h3>•	IoT Devices and Data Analysis in Smart Farming</h3>
+          <p>The Internet of Things (IoT) has revolutionized how data is collected on farms by providing real-time access through connected devices like sensors and cameras that allow farmers an unprecedented level of insight into their operations’ performance.
+            This data is then analyzed using advanced analytics tools which provide insights into trends over time helping farmers make informed decisions about when best to plant certain crops or apply specific treatments based on experience combined with current conditions monitored by IoT devices
+            </p>
+        </div>
+    </section>
+    <section id="section2" data-nav="Farm Management">
+      <div class="landing__container">
+        <h2>Farm Management</h2>
+      <h3>• Crop Management and Monitoring</h3>
+      <p> Our Website and mobile app provide farmers with the ability to remotely monitor their crops and receive real-time data on weather patterns, soil moisture levels, and crop health. This information enables farmers to make informed decisions about when to plant, irrigate, and harvest their crops, leading to higher yields and profitability. Our App are widely used for crop management and monitoring.
+        </p>
+      <h3>•	Market Information and Pricing</h3>
+     <p> Our website and mobile app provide farmers with up-to-date market information, allowing them to make informed decisions about pricing and selling their crops. Farmers can access information about current market prices, demand and supply, and even future trends. Our App provide farmers with market information and pricing data.
+        </p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Disease Detection">
+      <div class="landing__container">
+        <h2>Disease Detection</h2>
+       <p>Agriculture is one of the major sources of income for farmers. Plant diseases can be prevented from spreading if they are detected at the early stages of their development. Phytopathological conditions that affect leaves and refer to both plants and their byproducts. The abiotic variable is a biological factor such as bacteria, fungi, or algae, as opposed to factors such as rain, moisture, and temperature. Methods for automating the detection of plant leaf diseases have been developed using artificial intelligence, machine learning, and Deep learning .</p>
+
+       <p>These methods can accurately and swiftly identify plant leaf diseases without involving humans. In agriculture, deep learning is the most widely used application. Consequently, agricultural output can be grown, controlled, and improved . Deep learning is essential for smart farming, which includes modern agricultural tools, technology, and algorithms. Which include image classification, feature extraction, transformation, and pattern analysis, are frequently solved with deep learning.
+        </p>
+      </div>
+    </section>
+  
+
+  </main>
+  <footer class="page__footer">
+    <p>Farm</p>
+  </footer>
+<script src="index.js"></script>
+</body>
+</html>
